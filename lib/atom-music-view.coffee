@@ -50,8 +50,7 @@ class AtomMusicView extends View
           @label title:'Add music files', class:'btn icon icon-plus', tabIndex: 0, outlet:'openButton', =>
             @input style:'display: none;', type:'file', multiple:true, accept:'audio/*', outlet:'musicFileSelectionInput'
         @div class:'inline-block playing-now-container', =>
-          @span 'Now Playing : ', class:'highlight'
-          @span 'Nothing to play', class:'highlight', outlet:'nowPlayingTitle'
+          @span 'Nothing to play.', class:'highlight', outlet:'nowPlayingTitle'
           @div class:'ticker', click:'changeTicker', =>
             @div outlet:'ticker'
       @div class:'atom-music-list-container', =>
@@ -232,7 +231,7 @@ class AtomMusicView extends View
     @playList = []
     @playListCopy = []
     @updateMusicList()
-    @nowPlayingTitle.html ('Nothing to play')
+    @nowPlayingTitle.html ('Nothing to play.')
     @playbackButton.removeClass('icon-playback-pause').addClass('icon-playback-play')
     @container.removeClass('pulse')
 
