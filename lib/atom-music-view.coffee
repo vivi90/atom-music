@@ -44,7 +44,7 @@ class AtomMusicView extends View
           @button class:'btn icon icon-playback-fast-forward', click:'forward15'
           @button class:'btn icon icon-jump-right', click:'nextTrack'
         @div class:'btn-group btn-group-sm pull-right', =>
-          @button title:'Shuffle', class:'btn shuffle-button icon icon-sync', click:'toggleShuffle', outlet:'shuffleButton'
+          @button title:'Shuffle playlist', class:'btn shuffle-button icon icon-tasklist', click:'toggleShuffle', outlet:'shuffleButton'
           @button title:'Search in playlist', class:'btn icon icon-search', click:'showPlayList'
           @button title:'Clear playlist', class:'btn icon icon-trashcan', click:'clearPlayList'
           @label title:'Add music files', class:'btn icon icon-plus', tabIndex: 0, outlet:'openButton', =>
