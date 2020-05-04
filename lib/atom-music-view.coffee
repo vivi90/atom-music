@@ -44,10 +44,10 @@ class AtomMusicView extends View
           @button class:'btn icon icon-playback-fast-forward', click:'forward15'
           @button class:'btn icon icon-jump-right', click:'nextTrack'
         @div class:'btn-group btn-group-sm pull-right', =>
-          @button 'Ordered', class:'btn shuffle-button icon icon-sync', click:'toggleShuffle', outlet:'shuffleButton'
-          @button 'Search Playlist', class:'btn icon icon-list-ordered', click:'showPlayList'
-          @button 'Clear Playlist', class:'btn icon icon-trashcan', click:'clearPlayList'
-          @label 'Open Music Files', class:'btn icon icon-file-directory', tabIndex: 0, outlet:'openButton', =>
+          @button title:'Shuffle', class:'btn shuffle-button icon icon-sync', click:'toggleShuffle', outlet:'shuffleButton'
+          @button title:'Search in playlist', class:'btn icon icon-search', click:'showPlayList'
+          @button title:'Clear playlist', class:'btn icon icon-trashcan', click:'clearPlayList'
+          @label title:'Add music files', class:'btn icon icon-plus', tabIndex: 0, outlet:'openButton', =>
             @input style:'display: none;', type:'file', multiple:true, accept:'audio/*', outlet:'musicFileSelectionInput'
         @div class:'inline-block playing-now-container', =>
           @span 'Now Playing : ', class:'highlight'
@@ -213,10 +213,10 @@ class AtomMusicView extends View
   toggleShuffle: ->
     @shuffle = !@shuffle
     if @shuffle
-      @shuffleButton.text('Shuffled')
+      @shuffleButton.removeClass('icon-tasklist').addClass('icon-sync')
       @shuffleList()
     else
-      @shuffleButton.text('Ordered')
+      @shuffleButton.removeClass('icon-sync').addClass('icon-tasklist')
       @playList = @playListCopy[...]
 
   showPlayList: ->
