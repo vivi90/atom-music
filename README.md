@@ -1,4 +1,5 @@
 # mitsu package
+[![Build status](https://travis-ci.org/vivi90/mitsu.svg?branch=master)](https://travis-ci.org/vivi90/mitsu)
 [![Dependency status](https://david-dm.org/vivi90/mitsu.svg)](https://david-dm.org/vivi90/mitsu)
 
 This is a very simple music player plug-in for [Atom](https://www.atom.io).
