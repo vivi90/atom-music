@@ -4,6 +4,7 @@
 * Interchanged skip buttons fixed.
 * Button labels removed to save space.
 * Allowed panel locations extended.
+* README file updated.
 
 ## 0.10.0 - Prepare 0.10.0 release
 
