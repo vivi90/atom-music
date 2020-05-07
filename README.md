@@ -1,4 +1,4 @@
-# atom-music package
+# mitsu package
 
 A very Simple Music player for atom.
 

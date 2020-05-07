@@ -1,31 +1,36 @@
 {
-  "name": "atom-music",
-  "main": "./lib/atom-music",
+  "name": "mitsu",
+  "main": "./lib/main",
   "version": "0.10.0",
-  "description": "A very simple Music player for atom, listen to your favorite music while workin in atom.",
+  "description": "Simple music player for Atom.",
   "keywords": [
+    "play",
     "music",
-    "audio"
+    "audio",
+    "sound"
   ],
   "activationCommands": {
     "atom-workspace": [
-      "atom-music:toggle",
-      "atom-music:play-pause",
-      "atom-music:toggle-shuffle",
-      "atom-music:show-playlist",
-      "atom-music:forward-15s",
-      "atom-music:backward-15s",
-      "atom-music:next-track",
-      "atom-music:previous-track"
+      "mitsu:toggle",
+      "mitsu:play-pause",
+      "mitsu:toggle-shuffle",
+      "mitsu:show-playlist",
+      "mitsu:forward-15s",
+      "mitsu:backward-15s",
+      "mitsu:next-track",
+      "mitsu:previous-track"
     ]
   },
   "deserializers": {
-    "atom-music/AtomMusicView": "deserializeAtomMusicView"
+    "mitsu/PlayerView": "deserializePlayerView"
   },
-  "repository": "https://github.com/sdinesh86/atom-music",
-  "license": "MIT",
+  "workspaceOpeners": [
+    "atom://mitsu"
+  ],
+  "repository": "https://github.com/vivi90/mitsu",
+  "license": "GPL-3.0",
   "engines": {
-    "atom": ">=1.0.0 <2.0.0"
+    "atom": "*"
   },
   "dependencies": {
     "atom-space-pen-views": "^2.2.0"

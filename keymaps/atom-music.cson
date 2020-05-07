@@ -4,4 +4,4 @@
 # and the command to execute.
 
 'atom-workspace':
-  'alt-shift-m': 'atom-music:toggle'
+  'alt-shift-m': 'mitsu:toggle'

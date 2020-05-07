@@ -1,7 +1,7 @@
 {$, View} = require 'atom-space-pen-views'
-playListView = require './atom-music-playlist-view'
+playListView = require './playlist-view'
 module.exports =
-class AtomMusicView extends View
+class PlayerView extends View
   isPlaying = false
   playList = []
   playListCopy = []
@@ -28,7 +28,7 @@ class AtomMusicView extends View
 
   getTitle: -> 'Music'
 
-  getURI: -> 'atom://atom-music'
+  getURI: -> 'atom://mitsu'
 
   getDefaultLocation: -> 'bottom'
 
