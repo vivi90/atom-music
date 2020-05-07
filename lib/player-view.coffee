@@ -32,7 +32,7 @@ class PlayerView extends View
 
   getDefaultLocation: -> 'bottom'
 
-  getAllowedLocations: -> ['bottom']
+  getAllowedLocations: -> ["left", "right", "bottom", "center"]
 
   @content: ->
     @div class:'atom-music', =>

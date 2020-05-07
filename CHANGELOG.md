@@ -3,6 +3,7 @@
 * License changed from MIT to GPL-3.0.
 * Interchanged skip buttons fixed.
 * Button labels removed to save space.
+* Allowed panel locations extended.
 
 ## 0.10.0 - Prepare 0.10.0 release
 
