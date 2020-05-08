@@ -1,6 +1,7 @@
 ## 0.12.0 - Some fixes.
 * CI implemented.
 * Keymap renamed.
+* Menu entry moved and fixed.
 
 ## 0.11.0 - Package renamed and updated
 * Package renamed from "atom-music" to "mitsu".
