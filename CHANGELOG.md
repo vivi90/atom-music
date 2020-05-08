@@ -1,3 +1,7 @@
+## 0.12.0 - Some fixes.
+* CI implemented.
+* Keymap renamed.
+
 ## 0.11.0 - Package renamed and updated
 * Package renamed from "atom-music" to "mitsu".
 * License changed from MIT to GPL-3.0.
